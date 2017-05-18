@@ -19,4 +19,10 @@ function lightboxClick(event) {
     newImg.src = elem.getAttribute('data-lightbox');
     lightbox.classList.add('visible');
   }
+
+  if (elemID == 'lightbox-image' || elemID == 'lightbox-overlay') {
+    event.preventDefault();
+
+    lightbox.classList.remove('visible');
+  }
 }
