@@ -7,4 +7,16 @@ function lightboxClick(event) {
       lightboxImg = document.getElementById('lightbox-image'),
       lightbox = document.getElementById('lightbox-overlay'),
       newImg = new Image();
+
+  if (elem.hasAttribute('data-lightbox')) {
+    event.preventDefault();
+
+    newImg.onload = function() {
+      lightboxImg.src = this.src;
+    }
+
+    lightboxImg.src = '';
+    newImg.src = elem.getAttribute('data-lightbox');
+    lightbox.classList.add('visible');
+  }
 }
