@@ -1,5 +1,5 @@
 // Add an event listener for document click
-document.addEventListener('click', lightClick);
+document.addEventListener('click', lightboxClick);
 
 function lightboxClick(event) {
   var elem = event.target,
