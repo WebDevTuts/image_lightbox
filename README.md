@@ -2,6 +2,6 @@
 
 In this tutorial, we learn how to use JavaScript to code an image lightbox.
 
-[View your demo site here.](https://github.com/WebDevTuts/image_lightbox)
+[View your demo site here.](https://webdevtuts.github.io/image_lightbox/)
 
 ![Preview](screenshot.png)
